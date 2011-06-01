@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/static/css_lib/andy_reset.css">
+<style type="text/css" media="all">
+
+body { font-family: "Helvetica";
+  margin: 12px 30px;
+  background-color: #EEE;
+  width: 90%;
+  max-width: 960px;
+  line-height: 1.5; }
+
+th { display: none }
+
+textarea { font: normal normal 14px 'Menlo', 'Helvetica';
+  border: 1px solid #DDD;
+  margin: 0; padding: 8px 6px 6px 6px;
+  min-width: 960px;
+  min-height: 600px; }
+
+textarea:focus { border: 1px solid #BBB;
+  outline: none; }
+
+p { margin: 0.5em 0; width: 600px; }
+h1 { margin: 0.2em 0; width: 600px; }
+
+form, table, tbody, td, tr, label { 
+  display: block; 
+  text-align: left;
+  margin: 0; padding: 0; }
+
+button, input[type=submit] { padding: 8px 12px;
+  background: #FFF;
+  color: #444;
+  font: normal bold 14px "Helvetica";
+  border: 1px solid #BBB; }
+
+input[type=text] {min-width: 240px; padding: 5px;}
+
+</style>
+</head>
+<body>
+  <h1>{{ title }}</h1>
+  <p>User: {{ username }}</p>
+  <form action="/spin/" method="post">
+    <input readonly="readonly" type="text" id="id" value="{{id}}" name="id">
+    <input readonly="readonly" type="text" id="rev" value="{{rev}}" name="rev"><br>
+    <textarea id="content" name="content">{{ content }}</textarea><br>
+    <input type="submit" value="Post Entry">
+  </form> 
+</body>
+</html>

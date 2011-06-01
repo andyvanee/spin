@@ -1,0 +1,9 @@
+import couchdb
+
+def CouchContent():
+  couch = couchdb.Server()
+  db = couch["db_name"]
+  db.resource.credentials = ("username", "password")
+  return db
+
+db = CouchContent()
