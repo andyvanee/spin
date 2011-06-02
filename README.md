@@ -25,5 +25,10 @@ If you want Tornado to serve the styles/js, you'll have to fix the pathnames in 
 
 Run it with:
 
-    python spin.py 3000    #to run on port 3000
+    python spin.py 3000
+
+or as a daemon:
+
     python spin.py 3000 > log.txt 2>&1 &
+
+Feel free to change the port number.
