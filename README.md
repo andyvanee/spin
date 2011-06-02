@@ -17,6 +17,7 @@ I'm linking my static content folder into Nginx, while still keeping it under
 version control with a bind mount like this:
 
 file: /etc/fstab
+
     ...
     /srv/http/nginx/static/spin /srv/http/sites/spin/spin none bind
     ...
