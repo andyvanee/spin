@@ -24,5 +24,6 @@ file: /etc/fstab
 If you want Tornado to serve the styles/js, you'll have to fix the pathnames in the template.
 
 Run it with:
+
     python spin.py 3000    #to run on port 3000
     python spin.py 3000 > log.txt 2>&1 &
